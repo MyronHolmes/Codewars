@@ -10,14 +10,14 @@ public class Ghost {
 //
 
 
-    private String[] m_colorCodes = new String[]{"white" , "yellow" , "purple" , "red"};
-    private String m_color = "";
+    private String[] colorCodes = new String[]{"white" , "yellow" , "purple" , "red"};
+    private String color = "";
 
     public Ghost(){
-        m_color = m_colorCodes[new Random().nextInt(m_colorCodes.length)];
+        color = colorCodes[new Random().nextInt(colorCodes.length)];
     }
 
     public String getColor(){
-        return m_color;
+        return color;
     }
 }
